@@ -1,44 +1,81 @@
 
 body {
   font-family: 'Segoe UI', sans-serif;
-  background: #fff7f2;
-  color: #402f2f;
-  margin: 0; padding: 0;
+  margin: 0;
+  padding: 0;
+  background-color: #fffdf8;
+  color: #333;
 }
 header {
-  background: #ffe3e3;
+  background-color: #ffdde1;
+  padding: 1.5em;
   text-align: center;
-  padding: 20px;
-}
-nav a {
-  margin: 0 15px;
-  text-decoration: none;
-  color: #d46a6a;
-  font-weight: bold;
 }
 .logo {
-  width: 100px;
-  margin-bottom: 10px;
+  height: 80px;
 }
-main { padding: 20px; }
 .hero {
-  background: #ffe6f0;
-  padding: 40px 20px;
+  text-align: center;
+  padding: 2em;
+  background-color: #fff1f2;
+}
+.features {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  padding: 2em;
+}
+.features div {
+  background: #fff;
+  border-radius: 12px;
+  padding: 1em;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
   text-align: center;
 }
-.content {
-  max-width: 700px;
+.features img {
+  height: 150px;
+  border-radius: 8px;
+}
+.bloomie-section {
+  text-align: center;
+  padding: 2em;
+  background-color: #f0f8ff;
+}
+.bloomie-btn img {
+  height: 90px;
+  cursor: pointer;
+}
+.blogs {
+  padding: 2em;
+  background-color: #fefae0;
+}
+.blogs article {
+  margin-bottom: 1.5em;
+}
+.contact {
+  padding: 2em;
+  background-color: #e8f0fe;
+}
+.contact form {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
   margin: auto;
-  padding: 20px;
+}
+.contact input, .contact textarea {
+  margin-bottom: 1em;
+  padding: 0.8em;
+  border-radius: 8px;
+  border: 1px solid #ccc;
 }
 footer {
-  background: #ffe3e3;
   text-align: center;
-  padding: 10px;
-  font-size: 0.9em;
-  margin-top: 30px;
+  padding: 1em;
+  background-color: #ffdde1;
 }
-table { width: 100%; border-collapse: collapse; margin-top: 10px; }
-th, td { border: 1px solid #ccc; padding: 8px; text-align: center; }
-form input, form textarea { width: 100%; padding: 10px; margin: 5px 0; }
-form button { padding: 10px 20px; background-color: #d46a6a; color: white; border: none; }
+@media (min-width: 768px) {
+  .features {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}

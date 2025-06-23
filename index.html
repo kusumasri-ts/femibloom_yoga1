@@ -9,26 +9,75 @@
 </head>
 <body>
   <header>
-    <img src="logo.png" class="logo" alt="FemiBloom Yoga Logo"/>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="services.html">Services</a>
-      <a href="recipes.html">Recipes</a>
-      <a href="schedule.html">Schedule</a>
-      <a href="blog.html">Blog</a>
-      <a href="contact.html">Contact</a>
-    </nav>
+    <img src="logo.png" alt="FemiBloom Logo" class="logo" />
+    <h1>Welcome to FemiBloom Yoga</h1>
   </header>
+
   <main>
     <section class="hero">
-      <h1>Welcome to FemiBloom Yoga</h1>
-      <p>A nurturing space for women on their journey to and through motherhood.</p>
-      <iframe width="300" height="169" src="https://www.youtube.com/embed/VIDEO_ID" title="Placeholder Video" allowfullscreen></iframe>
+      <h2>Empowering every journey through womanhood</h2>
+      <p>Safe space for prenatal & postnatal yoga, mindful motherhood, & holistic wellness.</p>
+    </section>
+
+    <section class="features">
+      <div>
+        <img src="yoga.jpg" alt="Yoga" />
+        <h3>Yoga & Mindfulness</h3>
+        <p>Guided prenatal and postnatal yoga, pranayamas, and meditations tailored for every stage of your journey.</p>
+      </div>
+      <div>
+        <img src="nutrition.jpg" alt="Nutrition" />
+        <h3>Pregnancy-Friendly Recipes</h3>
+        <p>Explore simple, nourishing meals that are easy to prepare and ideal for expecting mothers and families.</p>
+      </div>
+      <div>
+        <img src="counsel.jpg" alt="Counsel" />
+        <h3>One-on-One & Group Sessions</h3>
+        <p>Book your first session free. Choose from private consultations or join our supportive group circles online.</p>
+      </div>
+    </section>
+
+    <section class="bloomie-section">
+      <h2>Meet Bloomie 🌼</h2>
+      <p>Click the Bloomie icon to ask questions about wellness, yoga, and more!</p>
+      <button onclick="activateBloomie()" class="bloomie-btn">
+        <img src="bloomie.png" alt="Bloomie AI Assistant" />
+      </button>
+      <audio id="bloomieSound" src="click-sound.mp3" preload="auto"></audio>
+    </section>
+
+    <section class="blogs">
+      <h2>From Our Blog</h2>
+      <article>
+        <h3>5 Gentle Yoga Poses to Start Your Morning During Pregnancy</h3>
+        <p>These calming poses help reduce stress and improve circulation. Perfect for your first trimester and beyond.</p>
+      </article>
+      <article>
+        <h3>Mind Over Body: Redefining Self-Worth in Motherhood</h3>
+        <p>You're more than a perfect picture. Embrace your strength, your softness, your journey — no filters needed.</p>
+      </article>
+    </section>
+
+    <section class="contact">
+      <h2>Contact Us</h2>
+      <form action="https://formspree.io/f/meqwpnqz" method="POST">
+        <input type="text" name="name" placeholder="Your Name" required/>
+        <input type="email" name="_replyto" placeholder="Your Email" required/>
+        <textarea name="message" placeholder="Your Message" required></textarea>
+        <button type="submit">Send</button>
+      </form>
     </section>
   </main>
+
   <footer>
-    <p>© 2025 FemiBloom Yoga</p>
+    <p>&copy; 2025 FemiBloom. Built with love. | Follow us on Instagram, YouTube, and WhatsApp</p>
   </footer>
+
+  <script>
+    function activateBloomie() {
+      document.getElementById('bloomieSound').play();
+      alert("Hi, I'm Bloomie! How can I help you on your wellness journey?");
+    }
+  </script>
 </body>
 </html>
