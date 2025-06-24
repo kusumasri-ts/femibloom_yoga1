@@ -2,80 +2,76 @@
 body {
   font-family: 'Segoe UI', sans-serif;
   margin: 0;
-  padding: 0;
-  background-color: #fffdf8;
-  color: #333;
+  background: #fffdf8;
+  color: #4a2c2a;
 }
 header {
-  background-color: #ffdde1;
-  padding: 1.5em;
+  background: #fde2e4;
   text-align: center;
+  padding: 20px;
+  border-bottom: 3px solid #f8ad9d;
 }
 .logo {
-  height: 80px;
+  height: 60px;
+  margin-bottom: 10px;
+}
+.tagline {
+  font-style: italic;
+  color: #5e3c58;
+}
+nav {
+  display: flex;
+  justify-content: center;
+  background: #f8ad9d;
+  padding: 10px;
+}
+nav a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #4a2c2a;
+  font-weight: bold;
 }
 .hero {
   text-align: center;
-  padding: 2em;
-  background-color: #fff1f2;
+  padding: 30px;
+  background: #fff0f5;
 }
-.features {
-  display: flex;
-  flex-direction: column;
-  gap: 2em;
-  padding: 2em;
-}
-.features div {
-  background: #fff;
-  border-radius: 12px;
-  padding: 1em;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-  text-align: center;
-}
-.features img {
-  height: 150px;
-  border-radius: 8px;
-}
-.bloomie-section {
-  text-align: center;
-  padding: 2em;
-  background-color: #f0f8ff;
-}
-.bloomie-btn img {
-  height: 90px;
-  cursor: pointer;
-}
-.blogs {
-  padding: 2em;
-  background-color: #fefae0;
-}
-.blogs article {
-  margin-bottom: 1.5em;
-}
-.contact {
-  padding: 2em;
-  background-color: #e8f0fe;
-}
-.contact form {
-  display: flex;
-  flex-direction: column;
-  max-width: 400px;
-  margin: auto;
-}
-.contact input, .contact textarea {
-  margin-bottom: 1em;
-  padding: 0.8em;
-  border-radius: 8px;
-  border: 1px solid #ccc;
+.video-placeholder {
+  border: 2px dashed #d4a5a5;
+  margin: 20px auto;
+  width: 80%;
+  padding: 20px;
+  font-style: italic;
+  color: #a97b7b;
 }
 footer {
+  background: #fde2e4;
   text-align: center;
-  padding: 1em;
-  background-color: #ffdde1;
+  padding: 10px;
+  font-size: 0.9em;
 }
-@media (min-width: 768px) {
-  .features {
-    flex-direction: row;
-    justify-content: space-around;
-  }
+#bloomie {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #fcd5ce;
+  border: 2px solid #f8ad9d;
+  padding: 10px 15px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 24px;
+  transition: all 0.3s;
+}
+#bloomie:hover {
+  background: #f8ad9d;
+}
+#chatBox {
+  position: fixed;
+  bottom: 80px;
+  right: 20px;
+  background: #fff0f5;
+  border: 1px solid #f8ad9d;
+  padding: 15px;
+  width: 250px;
+  border-radius: 10px;
 }
